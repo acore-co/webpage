@@ -1,7 +1,1152 @@
+
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="8ab94336-f4f7-4ec8-9c32-465adcb358cf" data-section-id="8ab94336-f4f7-4ec8-9c32-465adcb358cf">
+
+
+                
+                
+                <htmlcode id="el-ei0v46sg">
+<div id="root">
+  <nav id="navbar" class="fixed w-full z-50 bg-neutral-900 text-white">
+    <div class="container mx-auto px-4" id="el-1xba3phs">
+      <div class="flex justify-between items-center py-4" id="el-8jxhs0i1">
+        <!-- Logo -->
+        <div class="flex items-center" id="el-vk6ajitf">
+          <a href="#" class="text-2xl font-bold element-highlight" id="el-oc1wu9cg">
+    <img src="https://static.wixstatic.com/media/6c0971_fdec13cbd3104546ae6c3b6322dc9f67~mv2.png" alt="ACORE GROUP Logo" class="mx-auto h-auto max-w-[75px] md:max-w-[100px] lg:max-w-[125px] transition-opacity duration-300 opacity-100" id="el-ln2822a5" loading="lazy">
+</a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8" id="el-nh3jvzub">
+          <a href="#about" class="hover:text-blue-400 transition-colors duration-300" id="el-ydlgmncj">About Us</a>
+          <a href="#services" class="hover:text-blue-400 transition-colors duration-300" id="el-fl14it2s">Services</a>
+          <a href="#technology" class="hover:text-blue-400 transition-colors duration-300" id="el-xhr9kwsk">Technology</a>
+          <a href="#contact" class="hover:text-blue-400 transition-colors duration-300" id="el-5ti5rrd9">Contact</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden" id="el-sndqt5zr">
+            <button id="menu-btn" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-n1q6oqem"></svg>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-n1q6oqem">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" id="el-ufmiueu9"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden animate__animated">
+          <div class="px-2 pt-2 pb-3 space-y-1" id="el-hmltfde9">
+            <a href="#about" class="block px-3 py-2 hover:bg-neutral-800 rounded-md" id="el-sjc0dbog">About Us</a>
+            <a href="#services" class="block px-3 py-2 hover:bg-neutral-800 rounded-md" id="el-a4nrmtn0">Services</a>
+            <a href="#technology" class="block px-3 py-2 hover:bg-neutral-800 rounded-md" id="el-z2yqlwf0">Technology</a>
+            <a href="#contact" class="block px-3 py-2 hover:bg-neutral-800 rounded-md" id="el-b9ke7cni">Contact</a>
+          </div>
+        </div>
+        </div>
+      </nav>
+
+      <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuItems = mobileMenu.querySelectorAll('a');
+        let isMenuOpen = false;
+
+        menuBtn.addEventListener('click', () => {
+        if (!isMenuOpen) {
+          mobileMenu.classList.remove('hidden');
+          mobileMenu.classList.add('animate__fadeIn');
+          isMenuOpen = true;
+        } else {
+          mobileMenu.classList.add('animate__fadeOut');
+          setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('animate__fadeOut');
+          }, 500);
+          isMenuOpen = false;
+        }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+        if (isMenuOpen && !mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+          mobileMenu.classList.add('animate__fadeOut');
+          setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('animate__fadeOut');
+          }, 500);
+          isMenuOpen = false;
+        }
+        });
+
+        // Close mobile menu when clicking on a menu item
+        menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+          mobileMenu.classList.add('animate__fadeOut');
+          setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('animate__fadeOut');
+          }, 500);
+          isMenuOpen = false;
+        });
+        });
+      </script>
+    </div>
+    </htmlcode>
+              
+              
+              </element><element id="4bf2410b-ef74-4842-b8d8-54e20cedc6b5" data-section-id="4bf2410b-ef74-4842-b8d8-54e20cedc6b5">
+
+
+                
+                <htmlcode id="el-57jv9chd">
+<div id="root">
+  <section id="hero" class="min-h-[70vh] bg-neutral-900 text-white relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10 element-highlight" id="el-5qvil9go">
+      <div class="absolute inset-0 element-highlight bg-gradient-dots" style="
+    background: linear-gradient(135deg, #1a1f2c 0%, #2d3748 100%);
+    position: relative;
+    overflow: hidden;
+" id="el-2tdf76n3">
+    <!-- Modern dot pattern overlay -->
+    <div class="absolute inset-0" style="
+        background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.1) 1px, transparent 0);
+        background-size: 30px 30px;
+        transform: rotate(-5deg) scale(1.1);
+        animation: floatingDots 20s linear infinite;
+    " id="el-7jkce2im"></div>
+    
+    <!-- Subtle gradient animation -->
+    <div class="absolute inset-0 opacity-30" style="
+        background: linear-gradient(45deg, #4a5568 0%, transparent 100%);
+        filter: blur(50px);
+        animation: gradientShift 8s ease-in-out infinite;
+    " id="el-d5qngvby"></div>
+</div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="container mx-auto px-4 h-full flex items-center pt-20" id="el-q6h6r1ve">
+      <div class="grid md:grid-cols-2 gap-8 items-center" id="el-8vcf3xe5">
+        <div class="animate__animated animate__fadeInLeft" id="el-d8q8malh">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6" id="el-4lh24n9t">
+            Innovating Aviation and Beyond
+          </h1>
+          <p class="text-neutral-300 text-lg mb-8 leading-relaxed" id="el-swrjutj6">
+            Leading aviation consulting and aftermarket technical support since 2004. Serving airlines and aerospace OEMs across the Middle East with global expertise.
+          </p>
+          <div class="flex flex-wrap gap-4" id="el-z5brzb71">
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-colors duration-300 transform hover:scale-105" id="el-s66yo7cs">
+              Get Started
+            </a>
+            <a href="#about" class="border border-white hover:bg-white hover:text-neutral-900 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105" id="el-g528eo5s">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <div class="hidden md:block animate__animated animate__fadeInRight" id="el-6d1l49v1">
+          <div class="relative" id="el-l4wjsjgu">
+            <div class="absolute -inset-4 bg-blue-500/20 rounded-full blur-xl" id="el-gldmd5ll"></div>
+            <div class="relative bg-neutral-800 p-8 mt-16 rounded-2xl element-highlight" id="el-nwq3lr20">
+  <div class="grid grid-cols-2 gap-4">
+    <div class="bg-neutral-700/50 p-4 rounded-lg">
+      <h3 class="font-semibold mb-2">Aviation Consulting</h3>
+      <p class="text-sm text-neutral-400">Comprehensive MRO services and optimization</p>
+    </div>
+    <div class="bg-neutral-700/50 p-4 rounded-lg element-highlight">
+      <h3 class="font-semibold mb-2 element-highlight">Sales Representation</h3>
+      <p class="text-sm text-neutral-400">Expert integration of sales and engineering expertise</p>
+    </div>
+    <div class="bg-neutral-700/50 p-4 rounded-lg">
+      <h3 class="font-semibold mb-2">Digital Solutions</h3>
+      <p class="text-sm text-neutral-400">AI-powered operational excellence</p>
+    </div>
+    <div class="bg-neutral-700/50 p-4 rounded-lg">
+      <h3 class="font-semibold mb-2">Technical Support</h3>
+      <p class="text-sm text-neutral-400">End-to-end aerospace solutions</p>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animated Background Effect -->
+    <div class="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-neutral-900 to-transparent pointer-events-none" id="el-a9uy802u"></div>
+  </section>
+</div>
+</htmlcode>
+              
+              </element><element id="ebcb7ad4-b477-419d-8103-4c1d218402b0" data-section-id="ebcb7ad4-b477-419d-8103-4c1d218402b0">
+
+<htmlCode>
+<div id="root">
+  <section id="about" class="py-20 bg-neutral-100">
+    <div class="container mx-auto px-4">
+      <!-- About Header -->
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">About ACORE Group</h2>
+        <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left Side - Content -->
+        <div class="animate__animated animate__fadeInLeft">
+          <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-semibold mb-6 text-neutral-900">Excellence Since 2004</h3>
+            <p class="text-neutral-700 mb-6 leading-relaxed">
+              ACORE Group has been at the forefront of aviation consulting and aftermarket technical and commercial support since its inception in 2004. Headquartered in Dubai, ACORE serves airlines and aerospace OEMs across the Middle East, leveraging global partnerships and over four decades of industry expertise.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <span class="text-neutral-700">Global partnerships across aviation industry</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <span class="text-neutral-700">Comprehensive MRO services</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <span class="text-neutral-700">Cutting-edge digital solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side - Stats -->
+        <div class="animate__animated animate__fadeInRight">
+          <div class="grid grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <div class="text-4xl font-bold text-blue-600 mb-2">40+</div>
+              <div class="text-neutral-600">Years of Experience</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <div class="text-4xl font-bold text-blue-600 mb-2">2004</div>
+              <div class="text-neutral-600">Established In</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <div class="text-4xl font-bold text-blue-600 mb-2">100+</div>
+              <div class="text-neutral-600">Global Partners</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <div class="text-4xl font-bold text-blue-600 mb-2">24/7</div>
+              <div class="text-neutral-600">Support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="ea7eb3d3-96e1-425d-b542-5239a06fb11c" data-section-id="ea7eb3d3-96e1-425d-b542-5239a06fb11c">
+
+<htmlCode>
+<div id="root">
+  <section id="services" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <!-- Services Header -->
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Our Core Services</h2>
+        <p class="text-neutral-600 max-w-2xl mx-auto">Comprehensive solutions tailored for the aviation industry</p>
+        <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Aviation Consulting -->
+        <div class="bg-neutral-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp">
+          <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-neutral-900">Aviation Consulting</h3>
+          <ul class="space-y-3 text-neutral-700">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              MRO Services
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Composite Manufacturing
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Planning Optimization
+            </li>
+          </ul>
+        </div>
+
+        <!-- Aftermarket Support -->
+        <div class="bg-neutral-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+          <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-neutral-900">Aftermarket Support</h3>
+          <ul class="space-y-3 text-neutral-700">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Technical Support
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Commercial Support
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Global Partnerships
+            </li>
+          </ul>
+        </div>
+
+        <!-- Digital Solutions -->
+        <div class="bg-neutral-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+          <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-neutral-900">Digital Solutions</h3>
+          <ul class="space-y-3 text-neutral-700">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              AI Integration
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Process Automation
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Digital Transformation
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="6a1d5fa9-5028-415e-a152-4ad279bdae16" data-section-id="6a1d5fa9-5028-415e-a152-4ad279bdae16">
+
+
+                <htmlcode id="el-8sv2j5b3">
+<div id="root">
+  <section id="partners" class="py-20 bg-neutral-50">
+    <div class="container mx-auto px-4" id="el-f929ger7">
+      <!-- Partners Header -->
+      <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-ivilu2mq">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4" id="el-7yb3gwih">Our Global Partners</h2>
+        <p class="text-neutral-600 max-w-2xl mx-auto" id="el-0axailab">Collaborating with industry leaders to deliver excellence</p>
+        <div class="w-20 h-1 bg-blue-600 mx-auto mt-4" id="el-zzokafjl"></div>
+      </div>
+
+      <!-- Partners Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center" id="el-yfohhdrb">
+        <!-- Partner placeholders using available images -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px] aspect-[3/2] flex items-center justify-center animate__animated animate__fadeIn" id="el-58p325am">
+          <div class="w-full h-full flex items-center justify-center element-highlight" id="el-rbdccq1h">
+  <img src="https://www.pccomposites.com/wp-content/uploads/2022/04/Isovolta-Group.png" alt="Isovolta Group Logo" class="w-auto h-12 object-contain transition-opacity duration-300 opacity-100" loading="lazy">
+</div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px] aspect-[3/2] flex items-center justify-center animate__animated animate__fadeIn" style="animation-delay: 0.2s;" id="el-b6g1qbzn">
+          <div class="w-full h-full flex items-center justify-center element-highlight" id="el-2bs0clly">
+  <img src="https://www.euro-composites.com/wp-content/themes/eurocomp/images/logo.png.pagespeed.ce.k0JCGd-Nrd.png" alt="Euro-Composites logo" class="h-12 object-contain transition-opacity duration-300 opacity-100 element-highlight" loading="lazy">
+</div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px] aspect-[3/2] flex items-center justify-center animate__animated animate__fadeIn" style="animation-delay: 0.4s;" id="el-d05k5js2">
+          <div class="w-full h-full flex items-center justify-center element-highlight" id="el-dmu4ne11">
+  <img src="https://www.gerflor.com/cache/media/old-dop/logo-gerflor-dop/s%2C400%2C300-a48059.png" alt="Gerflor Logo" class="h-12 w-auto object-contain transition-opacity duration-300 opacity-100" loading="lazy">
+</div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px] aspect-[3/2] flex items-center justify-center animate__animated animate__fadeIn" style="animation-delay: 0.6s;" id="el-kfp9eu5h">
+          <div class="w-full h-full flex items-center justify-center element-highlight" id="el-lk6uq0rj">
+  <img src="https://dms.mydukaan.io/original/webp/media/e9ec8c79-0950-4986-b179-2d147a67c262.svg" alt="Factri.Ai Logo" class="w-auto h-12">
+</div>
+        </div>
+      </div>
+
+      <!-- Partnership Benefits -->
+      <div class="mt-20 grid md:grid-cols-3 gap-8" id="el-8qc76dqz">
+        <div class="bg-white p-6 rounded-xl shadow-md animate__animated animate__fadeInUp" id="el-akvujslt">
+          <div class="text-blue-600 mb-4" id="el-17b0eduj">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-pwknkdk9">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" id="el-fa78m6zh"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2" id="el-4fpm7oug">Global Network</h3>
+          <p class="text-neutral-600" id="el-dntiircz">Strategic partnerships across Europe and the Middle East</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md animate__animated animate__fadeInUp" style="animation-delay: 0.2s;" id="el-53qt97rc">
+          <div class="text-blue-600 mb-4" id="el-36r4049y">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-5033umrk">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" id="el-jwipwguz"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2" id="el-o3j0p0ky">Quality Assurance</h3>
+          <p class="text-neutral-600" id="el-nud0eim5">Collaboration with industry-leading manufacturers</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md animate__animated animate__fadeInUp" style="animation-delay: 0.4s;" id="el-tqcfx2aq">
+          <div class="text-blue-600 mb-4" id="el-vdx1rglk">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-nwpcugcw">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" id="el-gi2qs0te"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2" id="el-ubpv03k1">Innovation Focus</h3>
+          <p class="text-neutral-600" id="el-y5v16q3k">Advanced solutions through technology partnerships</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlcode>
+              </element><element id="c40d97a5-f4aa-4c66-8c7a-dfaf30909db5" data-section-id="c40d97a5-f4aa-4c66-8c7a-dfaf30909db5">
+
+
+                <htmlcode id="el-3y7ev5gm">
+<div id="root">
+  <section id="technology" class="py-20 bg-neutral-900 text-white">
+    <div class="container mx-auto px-4" id="el-ql48xjyg">
+      <!-- Technology Header -->
+      <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-pbeeu3sa">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" id="el-v6dvser0">Technology Arm</h2>
+        <p class="text-neutral-300 max-w-2xl mx-auto element-highlight" id="el-qxo5k9kd">Pioneering digital transformation in aviation and beyond</p>
+        <div class="w-20 h-1 bg-blue-600 mx-auto mt-4" id="el-ay701jax"></div>
+      </div>
+
+      <!-- Technology Solutions Grid -->
+      <div class="grid md:grid-cols-2 gap-12 items-center" id="el-9euqg7gk">
+        <!-- Left Side: Content -->
+        <div class="space-y-8 animate__animated animate__fadeInLeft" id="el-66qstjkf">
+          <div class="bg-neutral-800 p-6 rounded-xl hover:bg-neutral-700 transition-colors duration-300" id="el-ukd6697n">
+            <h3 class="text-xl font-semibold mb-4 flex items-center" id="el-hh7jufod">
+              <svg class="w-6 h-6 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-f9pe2s6k">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" id="el-2xkmisn1"></path>
+              </svg>
+              Factri.Ai Platform
+            </h3>
+            <p class="text-neutral-300" id="el-z6c0xs39">Empowering manufacturers with AI-driven solutions for operational excellence and decision-making optimization.</p>
+          </div>
+
+          <div class="bg-neutral-800 p-6 rounded-xl hover:bg-neutral-700 transition-colors duration-300" id="el-iwpf37gv">
+            <h3 class="text-xl font-semibold mb-4 flex items-center" id="el-e3iz32vh">
+              <svg class="w-6 h-6 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-qkodoci8">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" id="el-pw41kjg1"></path>
+              </svg>
+              LexX Technologies
+            </h3>
+            <p class="text-neutral-300" id="el-xotp05sq">Innovative solutions tailored for aviation industry automation and process optimization.</p>
+          </div>
+        </div>
+
+        <!-- Right Side: Features -->
+        <div class="bg-neutral-800 rounded-xl p-8 animate__animated animate__fadeInRight" id="el-m9ybzv41">
+          <h3 class="text-2xl font-semibold mb-6" id="el-9qurp1bm">Digital Transformation Features</h3>
+          <div class="space-y-4" id="el-td7ykuzu">
+            <div class="flex items-center p-4 bg-neutral-700 rounded-lg" id="el-040adicr">
+              <div class="bg-blue-500/20 p-3 rounded-full mr-4" id="el-6noeccrt">
+                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-r2wk8d4u">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" id="el-nzbyesww"></path>
+                </svg>
+              </div>
+              <div id="el-n6w1y0a3">
+                <h4 class="font-semibold mb-1" id="el-uaq03xpx">AI-Powered Analytics</h4>
+                <p class="text-sm text-neutral-400" id="el-yy7v2yla">Real-time insights and predictive analysis</p>
+              </div>
+            </div>
+
+            <div class="flex items-center p-4 bg-neutral-700 rounded-lg" id="el-q32g6hak">
+              <div class="bg-blue-500/20 p-3 rounded-full mr-4" id="el-khbbpsi1">
+                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-ei6jy8ak">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" id="el-xhciid0m"></path>
+                </svg>
+              </div>
+              <div id="el-dlbffji8">
+                <h4 class="font-semibold mb-1" id="el-9qwjvw7a">Process Automation</h4>
+                <p class="text-sm text-neutral-400" id="el-2sy0lgqb">Streamlined workflows and operations</p>
+              </div>
+            </div>
+
+            <div class="flex items-center p-4 bg-neutral-700 rounded-lg" id="el-7lqe761g">
+              <div class="bg-blue-500/20 p-3 rounded-full mr-4" id="el-mxudgpzw">
+                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-xvp6y6gg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" id="el-6jpatxev"></path>
+                </svg>
+              </div>
+              <div id="el-hkkgdbdb">
+                <h4 class="font-semibold mb-1" id="el-ujvd0s40">Smart Integration</h4>
+                <p class="text-sm text-neutral-400" id="el-ghxexamx">Seamless system connectivity</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlcode>
+              </element><element id="74fa151f-ed79-48c4-89d6-28380d1de95a" data-section-id="74fa151f-ed79-48c4-89d6-28380d1de95a">
+
+
+                
+                <htmlcode id="el-j4opjrp0">
+<div id="root">
+  <section id="leadership" class="py-20 bg-white">
+    <div class="container mx-auto px-4" id="el-b6ct96rn">
+      <!-- Leadership Header -->
+      <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-bkz40ri4">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4" id="el-uu7ol2sh">Our Leadership</h2>
+        <p class="text-neutral-600 max-w-2xl mx-auto" id="el-65bpuewp">Guided by experience, driven by innovation</p>
+        <div class="w-20 h-1 bg-blue-600 mx-auto mt-4" id="el-7y8lrdbu"></div>
+      </div>
+
+      <!-- Leadership Profile -->
+      <div class="max-w-4xl mx-auto" id="el-7qvthb07">
+        <div class="bg-neutral-50 rounded-2xl p-8 shadow-lg animate__animated animate__fadeInUp" id="el-cfr6rjpu">
+          <div class="grid md:grid-cols-3 gap-8 items-center" id="el-r2keotm0">
+            <!-- Profile Image -->
+            <div class="text-center md:border-r border-neutral-200" id="el-zepjctwt">
+              <div class="relative w-48 h-48 mx-auto element-highlight" id="el-rtl9ga8m">
+  <div class="absolute inset-0 bg-blue-500/10 rounded-full animate-pulse"></div>
+  <div class="relative rounded-full overflow-hidden border-4 border-white shadow-lg">
+    <img src="https://static.wixstatic.com/media/b68bf8_3efccfa960994c3c889847d12b61cece.png/v1/fill/w_246,h_246,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b68bf8_3efccfa960994c3c889847d12b61cece.png" alt="Profile Image" class="w-full h-full object-cover" loading="lazy" srcset="https://static.wixstatic.com/media/b68bf8_3efccfa960994c3c889847d12b61cece.png/v1/fill/w_246,h_246,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b68bf8_3efccfa960994c3c889847d12b61cece.png 1x,
+                 https://static.wixstatic.com/media/b68bf8_3efccfa960994c3c889847d12b61cece.png/v1/fill/w_492,h_492,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b68bf8_3efccfa960994c3c889847d12b61cece.png 2x">
+  </div>
+</div>
+            </div>
+
+            <!-- Profile Info -->
+            <div class="md:col-span-2" id="el-g8qopz1c">
+              <div class="mb-6" id="el-vs0jevov">
+                <h3 class="text-2xl font-bold text-neutral-900 mb-2" id="el-pxk7n9f7">Sudhakar Murthy</h3>
+                <p class="text-blue-600 font-semibold mb-4" id="el-43cd12aw">Founder &amp; Chairman</p>
+                <p class="text-neutral-600 leading-relaxed mb-4" id="el-8o7a2o8r">
+                  A veteran in aerospace engineering and maintenance with over 40 years of experience. A Mechanical Engineering graduate with an MBA from Indian School of Business (ISB), leading ACORE Group's vision of innovation and excellence.
+                </p>
+              </div>
+
+              <!-- Achievements -->
+              <div class="grid grid-cols-2 gap-4" id="el-swrwikfo">
+                <div class="bg-white p-4 rounded-lg shadow" id="el-50igfbue">
+                  <div class="text-blue-600 font-bold text-2xl mb-1" id="el-rfq17uvg">40+</div>
+                  <div class="text-neutral-600 text-sm" id="el-whgynl7g">Years Experience</div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow" id="el-7qweagw4">
+                  <div class="text-blue-600 font-bold text-2xl mb-1" id="el-ysojieju">2004</div>
+                  <div class="text-neutral-600 text-sm" id="el-vt8sgns6">Founded ACORE</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vision Statement -->
+        <div class="mt-12 text-center p-8 bg-neutral-900 rounded-2xl text-white animate__animated animate__fadeInUp" id="el-896mu8w9">
+          <h3 class="text-xl font-semibold mb-4" id="el-at230gmj">Our Vision</h3>
+          <p class="text-neutral-300 leading-relaxed" id="el-ujkcehpm">
+            "To deliver exceptional value through innovative solutions, fostering operational excellence for our partners and clients in the aviation and technology sectors."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlcode>
+              
+              </element><element id="0badc75a-92f7-4f10-954d-91ecfdad99ad" data-section-id="0badc75a-92f7-4f10-954d-91ecfdad99ad">
+
+<htmlCode>
+<div id="root">
+  <section id="contact" class="py-20 bg-neutral-900">
+    <div class="container mx-auto px-4">
+      <!-- Contact Header -->
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Contact Us</h2>
+        <p class="text-neutral-300 max-w-2xl mx-auto">Explore how ACORE Group can support your business needs</p>
+        <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <!-- Contact Form -->
+        <div class="bg-neutral-800 p-8 rounded-2xl shadow-xl animate__animated animate__fadeInLeft">
+          <form id="contactForm" class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-neutral-300 mb-2">Full Name</label>
+              <input type="text" id="name" name="name" required
+                class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:border-blue-500 text-white placeholder-neutral-400"
+                placeholder="Enter your name">
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-neutral-300 mb-2">Email Address</label>
+              <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:border-blue-500 text-white placeholder-neutral-400"
+                placeholder="Enter your email">
+            </div>
+
+            <div>
+              <label for="company" class="block text-sm font-medium text-neutral-300 mb-2">Company Name</label>
+              <input type="text" id="company" name="company" required
+                class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:border-blue-500 text-white placeholder-neutral-400"
+                placeholder="Enter your company name">
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-neutral-300 mb-2">Message</label>
+              <textarea id="message" name="message" rows="4" required
+                class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:border-blue-500 text-white placeholder-neutral-400"
+                placeholder="How can we help you?"></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 transform hover:scale-105">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="space-y-8 animate__animated animate__fadeInRight">
+          <div class="bg-neutral-800 p-8 rounded-2xl shadow-xl">
+            <h3 class="text-xl font-semibold text-white mb-6">Get in Touch</h3>
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div class="bg-blue-500/20 p-3 rounded-full">
+                  <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-neutral-300 font-medium">Location</h4>
+                  <p class="text-neutral-400">Dubai, United Arab Emirates</p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div class="bg-blue-500/20 p-3 rounded-full">
+                  <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-neutral-300 font-medium">Email</h4>
+                  <a href="mailto:admin@acore.co" class="text-blue-400 hover:text-blue-300">admin@acore.co</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Contact -->
+          <div class="bg-blue-600 p-8 rounded-2xl shadow-xl">
+            <h3 class="text-xl font-semibold text-white mb-4">Ready to Get Started?</h3>
+            <p class="text-neutral-100 mb-6">Connect with us to discuss how we can support your aviation needs.</p>
+            <a href="#" class="inline-flex items-center text-white font-medium hover:text-neutral-200">
+              Schedule a Consultation
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Add form submission logic here
+      alert('Thank you for your message. We will get back to you soon!');
+      this.reset();
+    });
+  </script>
+</div>
+</htmlCode></element><element id="8d2abf63-e721-4380-9a7e-373744a59798" data-section-id="8d2abf63-e721-4380-9a7e-373744a59798">
+
+<htmlCode>
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Company Info -->
+        <div class="space-y-4">
+          <h3 class="text-2xl font-bold mb-4">ACORE Group</h3>
+          <p class="text-neutral-400">Innovating Aviation and Beyond since 2004</p>
+          <p class="text-neutral-400">Dubai, United Arab Emirates</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="text-neutral-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#services" class="text-neutral-400 hover:text-white transition-colors">Services</a></li>
+            <li><a href="#technology" class="text-neutral-400 hover:text-white transition-colors">Technology</a></li>
+            <li><a href="#partners" class="text-neutral-400 hover:text-white transition-colors">Partners</a></li>
+            <li><a href="#contact" class="text-neutral-400 hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Our Services</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Aviation Consulting</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">MRO Services</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Composite Manufacturing</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Digital Solutions</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center text-neutral-400">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              admin@acore.co
+            </li>
+            <li class="flex items-center text-neutral-400">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              +971 4 3453661
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <div class="border-t border-neutral-800 pt-8 mt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="text-neutral-400 text-sm mb-4 md:mb-0">
+            © 2024 ACORE Group. All rights reserved.
+          </div>
+          <div class="flex space-x-6">
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <span class="sr-only">LinkedIn</span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <span class="sr-only">Twitter</span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</htmlCode></element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          
